@@ -1,0 +1,123 @@
+/* Cascading stylesheet for the website */
+
+/* Text inside these asterisks and slashes are comments for human */
+
+  a {
+    color: blue;
+    /* set the text color to blue here */
+    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+  }
+
+  a:hover {
+    color: red;
+    /* set the text color to red here */
+    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+  }
+
+  body {
+    background-color: beige;
+    color:black;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: center;
+    /* set the background color here */
+    /* set the text color to black here */
+    /* set the font here */
+    /* set the text alignment here */
+   }
+
+   .container{
+      text-align: center;
+      position: absolute;
+      top: 13%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+   }
+
+   .container span{
+     text-transform: uppercase;
+     display: block;
+
+   }
+
+   .text1{
+     color: black;
+     font-size: 60px;
+     font-weight: 700;
+     letter-spacing: 8px;
+     margin-bottom: 20px;
+     position: relative;
+     animation: text 3s 1;
+   }
+
+   .text2{
+     font-size: 30px;
+     color: green;
+   }
+
+   @keyframes text {
+
+     0%{
+       color: beige;
+       margin-bottom: -40px;
+     }
+
+     30%{
+       letter-spacing: 25px;
+       margin-bottom: -40px;
+     }
+
+     85%{
+       letter-spacing: 8px;
+       margin-bottom: -40px;
+       color: green;
+     }
+   }
+
+   img {
+    image-orientation: none;
+    }
+
+  footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+   }
+
+  h2 {
+    color: #075AAB;
+    /* set the text color of to #075AAB here */
+    /* set both the bottom margin and top margin to 2.5rem here */
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+   }
+
+  h3 {
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  h5 {
+    margin-top: 0.5rem;
+  }
+
+  hr {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  /* this controls how the bullet points in the resume page looks */
+  ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+  }
